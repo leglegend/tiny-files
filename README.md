@@ -23,5 +23,3 @@ module.exports = {
 ```
 ## 申请key
 可在[tinypng官网](https://tinypng.com/developers)申请key，每月可免费压缩500个图片
-## 维护
-有任何问题请联系 倪特(<z-nite@sharingmail.cn>)
