@@ -1,0 +1,27 @@
+{
+  "name": "tiny-files",
+  "version": "0.0.3",
+  "description": "在commit之前压缩图片",
+  "maintainers": [
+    {
+      "name": "z-nite",
+      "email": "z-nite@sharingmail.cn"
+    }
+  ],
+  "main": "src/index.js",
+  "bin": {
+    "tiny-files": "src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "tiny",
+    "tinify"
+  ],
+  "dependencies": {
+    "tinify": "^1.7.1"
+  },
+  "author": "leglegend",
+  "license": "ISC"
+}
