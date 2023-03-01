@@ -2,7 +2,7 @@
 commit前自动压缩图片
 ## 安装
 ```
-qnpm i @q/tiny-files -D
+npm i tiny-files -D
 ```
 ## 使用
 需要先安装`lint-staged`，然后在int-staged.config.js添加一条：
