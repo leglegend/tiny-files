@@ -7,7 +7,7 @@
 npm i tiny-files -D
 ```
 ## 使用
-需要先安装`lint-staged`，然后在int-staged.config.js添加一条：
+需要先安装`lint-staged`，然后在lint-staged.config.js添加一条：
 ``` js
 // lint-staged.config.js
 module.exports = {
@@ -25,6 +25,19 @@ module.exports = {
 或直接通过命令行进行压缩：
 ```
 npx tiny-files --key yourKey imagePath1 imagePath2
+```
+## 在package.json中配置
+`tiny-files`可以读取package.json中的配置，可以将key配置在package.json中，也可以配置一个列表，来让`tiny-files`忽略压缩这些文件：
+```json
+{
+  "tinyFiles": {
+    "key": "yourKey",
+    "ignore": [
+      "file1.png",
+      "file2.png"
+    ]
+  }
+}
 ```
 ## 申请key
 可在[tinypng官网](https://tinypng.com/developers)申请key，每月可免费压缩500个图片
