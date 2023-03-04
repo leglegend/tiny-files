@@ -7,9 +7,8 @@
 npm i tiny-files -D
 ```
 ## 使用
-需要先安装`lint-staged`，然后在lint-staged.config.js添加一条：
+需要先安装`lint-staged`，然后在`lint-staged.config.js`添加一条：
 ``` js
-// lint-staged.config.js
 module.exports = {
   '*.{png,jpg,jpeg}': 'tiny-files --key yourKey',
 }
