@@ -1,6 +1,6 @@
 {
   "name": "tiny-files",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "在commit之前自动压缩图片",
   "repository": {
     "type": "git",
