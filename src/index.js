@@ -5,6 +5,15 @@ const fs = require('fs')
 const tinify = require('tinify')
 const { spawnSync } = require('child_process')
 
+// 跳过合并
+const status = execSync('git status', {
+  encoding: 'utf-8'
+})
+
+if (/merge|合并/i.test(status.split('\n')[1])) {
+  process.exit(0)
+}
+
 // 获取参数
 const args = process.argv.slice(2)
 const argsKeyIndex = args.findIndex((arg) => ['-k', '--key'].includes(arg))
